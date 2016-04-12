@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<wot mid="AAIM.JU" visible="true" hid="1045" optional="false" title="Auto-Aim Indication+Snapping Configuration" author="Juhaas" client-version="0.9.14.1" version="0.9.14.01" info="Customized settings for Auto-Aim Indication+ mod." info-url="" requires="AAIM">
+  <transform>
+    <file name="x.x.x\scripts\client\mods\autoaim_indicator.json">
+      <replace find="regex:(?:\s*\&quot;background\&quot;\s*:\s*\&quot;)(?'pat'.*)(?:\&quot;)" />
+      <replace find="regex:(?:\s*\&quot;color\&quot;\s*:\s*\&quot;)(?'pat'.*)(?:\&quot;)" text="#8A80FF" />
+      <replace find="regex:(?:\s*\&quot;snapping_angle_degrees\&quot;\s*:\s*)(?'pat'[\d\.]+)(?:,*)" text="10.0" />
+      <replace find="regex:(?:\s*\&quot;toggledOffMsg\&quot;\s*:\s*.*color=')(?'pat'.*)(?:')" text="#8A80FF" />
+      <replace find="regex:(?:\s*\&quot;toggledOnMsg\&quot;\s*:\s*.*color=')(?'pat'.*)(?:')" text="#33CC33" />
+      <replace find="toggledOffMsg" pattern="Autoaim indicator/snapping turned OFF" text="AutoAim+Snap OFF" />
+      <replace find="toggledOnMsg" pattern="Autoaim indicator/snapping turned ON" text="AutoAim+Snap ON" />
+    </file>
+  </transform>
+</wot>

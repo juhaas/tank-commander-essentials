@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<wot mid="CRITALERTS" visible="true" hid="1085" optional="false" title="Critical Alerts" author="Juhaas" client-version="0.9.14.1" version="0.9.14.01" info="Alternate alert sounds for vehicle fire, damaged ammo rack and minimap/chat notification." info-url="" requires="XVM" />

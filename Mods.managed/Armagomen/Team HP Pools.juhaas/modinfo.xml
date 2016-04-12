@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<wot mid="ATHPP.JU" visible="true" hid="1035" optional="false" title="Team HP Pool Bar Configuration" author="Juhaas" client-version="0.9.14.1" version="0.9.14.01" info="Slightly customized settings for Armagomen's Team HP Pool Bar. Also replaces the counter background with something that better matches with WoT UI and doesn't look like total ass." info-url="" colorblind="true" requires="ATHPP">
+  <transform>
+    <file name="x.x.x\scripts\client\gui\mods\mod_team_hp.json">
+      <replace find="&quot;enable&quot;" line="13..18" pattern="true" text="false" />
+      <replace find="&quot;mainGunDynamic&quot;:" pattern="false" text="true" />
+      <replace find="&quot;showMainGun&quot;:" pattern="false" text="true" />
+      <replace find="regex:(?:\s*\&quot;mainGunColor\&quot;\s*:\s*\&quot;)(?'pat'.*)(?:\&quot;)" text="#FFBD43" />
+      <replace find="regex:(?:\s*\&quot;enemyHpBarColorBlind\&quot;\s*:\s*\&quot;)(?'pat'.*)(?:\&quot;)" text="#8A80FF" />
+    </file>
+  </transform>
+</wot>

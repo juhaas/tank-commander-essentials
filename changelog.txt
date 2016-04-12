@@ -1,0 +1,230 @@
+[0.9.14.08] April , 2016
+- Added Jimbo's Crosshair Mod
+- Added missing entries to Colored In-Game Messages
+
+[0.9.14.07] April 1, 2016
+- XVM 6.2.1.2
+- Region Switcher locales (NA,EU,RU,KR,SEA)
+
+[0.9.14.06] March 25, 2016
+- XVM 6.2.1.1
+
+[0.9.14.05] March 25, 2016
+- XVM 6.2.1 dev-5296
+- J1mB0's Contour Mod 1.47
+- Region Switcher locales (NA,EU,RU,KR,SEA)
+- Added few new voices to Terrorist Crew Voice mod
+- Critical Alerts mod update
+- Adjusted audio mods' volume
+
+[0.9.14.04] March 15, 2016
+- Terrorist Crew Voices v.2.1 for proper Wwise support
+- Region Changer locales (KR,SEA)
+
+[0.9.14.03] March 14, 2016
+- Fix Russian translation of the fire notification in GambitER's Damage Log
+- Added new version of Terrorist Crew Voices
+
+[0.9.14.02] March 11, 2016
+- XVM 6.2.1
+- Enable Auto Equipment Return in XVM config
+- Fix some of Jimbo's contour icons
+
+[0.9.14.01] March 10, 2016
+- Region Changer locales (NA,EU,RU)
+- XVM Nightly 5216
+- GambitER Damage Log 0.3.1
+- Voice/Audio mods removed pending rewrite to 9.14
+
+[0.9.13.07] March 2, 2016
+- Region Changer locales (NA,EU,RU,KR,SEA)
+
+[0.9.13.06] January 29, 2016
+- Region Changer locales (NA,EU,RU,KR,SEA)
+
+[0.9.13.05] December 30, 2015
+- XVM 6.0.2.1
+
+[0.9.13.04] December 29, 2015
+- Region Changer locales (NA,EU,RU,SEA,KR)
+
+[0.9.13.03] December 22, 2015
+- XVM Colorblind Configuration
+
+[0.9.13.02] December 21, 2015
+- XVM 6.2.0
+- YasenKrasen Statistics 9.13
+
+[0.9.13.01] December 16, 2015
+- WoT Patch 9.13
+- Region Switcher locales (NA,EU,RU,SEA)
+- XVM Nightly 5074
+- GambitER Damage Log 0.2.2
+- J1mB0's Controur Icons 1.46
+- Juhaas' XVM Colorblind Config disabled pending XVM final release
+
+[0.9.12.05] December 03, 2015
+- Region Switcher locales update (NA,EU,RU,SEA)
+
+[0.9.12.04] November 28, 2015
+- XVM 6.1.6.1
+- Fix Damage Panel font for Windows 10
+- Region Switcher locales (NA,EU,RU,SEA)
+
+[0.9.12.03] November 21, 2015
+- Region Switcher update (NA,EU,RU,SEA)
+
+[0.9.12.02] November 21, 2015
+- YasenKrasen Statistics 0.9.12a
+- Fix issues with XVM colorblind config messing up the battle UI/minimap
+- Fix minimap labels
+- Adjust default position of XVM hit log
+- Auto-adjust position of XVM hit log with GambitER's Damage Log installed
+
+[0.9.12.01] November 18, 2015
+- WoT Patch 9.12
+- XVM 6.1.6
+- GambitER Damage Log 0.2.1
+- Armagomen Team HP 1.4.0
+- AutoAim+ 2015.11.18
+
+[0.9.10.11] September 25, 2015
+- Region Switcher locale update (NA,EU,RU,ASIA)
+- XVM 6.1.4.2
+
+[0.9.10.10] September 15, 2015
+- Installer compatibility 1.1.39 (modpack version update detection bug)
+- Region Switcher data update
+- Team HP Pools Bar 1.3.9
+- Damage Log configuration tweaks
+
+[0.9.10.9] September 12, 2015
+- Rampage mode tweaks
+- GambitER Damage Log 1.9
+
+[0.9.10.8] September 10, 2015
+- Region Switcher data
+
+[0.9.10.7] September 9, 2015
+- GamebitER Damage Log 1.8
+- Alternate Gun Reload sound
+- Alternate Minimap Ping & Alert Message sound
+- More colorblind UI tweaks
+
+[0.9.10.5] September 7, 2015
+- Better Team HP Pool Bar background
+
+[0.9.10.4] September 6, 2015
+- Installer compatibility 1.1.38 (backup bug fixes; master folder sync)
+- Fix Region Switcher unable to switch back to Home Region
+- Adjust colorblind color profiles to match game's native hue
+- Removed YasenKrassen Color Messages (Session Stats remain)
+- Add Critical Damage Alerts
+- Add Juhaas' In-Game Color Messages
+- Update to XVM 6.1.4
+- Fix inoperational mod info links (WoTLabs)
+
+[0.9.10.3] September 3, 2015
+- Base Capture UI position adjustment
+
+[0.9.10.2] September 3, 2015
+- Installer compatibility 1.1.37 (script processor bug fixes)
+- XVM 6.1.4 (Nightly 4789)
+- J1mB0's Controur Icons 1.44
+- Remove Locastan's Team HP Pool Bar
+- Add Armagomen's Team HP Pool Bar
+- Region Switcher update (SEA)
+
+[0.9.10.1] September 2, 2015
+- WoT Patch 9.10 Component update
+- Installer compatibility 1.1.36 (region-aware settings)
+- XVM 6.1.4 (Nightly 4777)
+- GambitER Damage Panel 1.7 Beta
+- YasenKrasen 0.9.10a
+- AutoAim Indication+ 2015.09.02
+- Locastan's Team HP Pool mod inactive pending update
+- Jimbo's Contour mod inactive pending update
+- Asia region switch inactive pending SAE 9.10 client update
+
+[0.9.9.5] August 5, 2015
+- Region Switcher components update
+- Dedicated same as home region removed from region switcher menu
+- Damage Log displaying vehicle name (for non-NA clients)
+- Small changes to Damage Log damage blocked header text
+- Installer compatibility 1.1.35 (region-aware install script syntax for file system and mod designator)
+
+[0.9.9.4] August 3, 2015
+- Region Switcher update
+
+[0.9.9.3] July 24, 2015
+- XVM 6.1.3.1
+
+[0.9.9.2] July 17, 2015
+- XVM 6.1.3
+- GambitER Damage Panel 1.6 Beta
+- YanesKrasen 0.9.9
+- Locastan's Team HP Pool 99
+- Jimbo's Contour Icons v1 1.47
+- Removed Mav's Ultra Fog Remover
+- Removed Replay Manager
+- Fixed Battle Timer font and position
+
+[0.9.9.1] July 16, 2015
+- Preliminary Release
+- WoT Patch 0.9.9 Component Update
+
+[0.9.8.11] July 6, 2015
+- Micropatch fix
+
+[0.9.8.10] June 3, 2015
+- Terrorist Crew Voices not showing up in installer
+- Installer compatibility 1.1.31 (newline code bug in script parser)
+
+[0.9.8.9] June 2, 2015
+- XVM 6.1.2
+- GambitER Damage Panel updated to 0.1.2 Beta
+- Region switching is back
+
+[0.9.8.8] June 2, 2015
+- Client version 0.9.8.1
+- Installer compatibility 1.1.28
+
+[0.9.8.7] May 31, 2015
+- Remove obsolete config files for GambitER Damage Panel
+
+[0.9.8.6] May 31, 2015
+- Update to XVM 6.1.2 RC2
+- Update to AutoAim+ Indication 2015.05.29
+- Game client region switcher (NA,EU,RU,SEA)
+- Installer compatibility 1.1.26 (region switching support)
+
+[0.9.8.5] May 30, 2015
+- GambitER Damage Panel updated to 0.1.1 Beta
+- Installer compatibility 1.1.25
+
+[0.9.8.4] May 29, 2015
+- Internal update
+
+[0.9.8.3]  May 28, 2015
+- Dicking around with colors
+- Damage Panel is not yet what it used to be, there are issues but for the most part functional.
+- Base capture positioning now properly tied to the frag bar (via XVM config)
+
+[0.9.8.2] May 27, 2015
+- XVM 6.2.1 Beta 1
+
+[0.9.8.1]
+- Client version 0.9.8
+
+[0.9.7.5] May 23, 2015
+- OTM: Ally for organized battles (non-random) now displays player name in Normal view
+- Hit Log: Hitpoints left formatting adjustments
+- Dmg Panel: Color adjustment
+- Dmg Panel: New Colorblind config
+- Carousel: Fix lone % character for never-played tank
+- Carousel: Added MoE percentage for 1 and 2 MoE tanks
+- Carousel: Damage color changed to MoE rating color
+- Carousel: Fix number alignment
+
+[0.9.7.4] May 21, 2015
+- Initial Public Offering

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<wot mid="XVM.JU.CB" visible="true" hid="1010" optional="true" title="XVM Configuration Profile Colorblind Extension" author="Juhaas" client-version="0.9.14.1" version="0.9.14.01" info="Color-blind compliant color scheme extension to the XVM Custom Configuration Profile. Note that your game client graphics settings should also be set to [Colorblind] mode." info-url="http://webster-image.com/" colorblind="true" requires="XVM.JU,XVM">
+  <transform>
+    <file name="configs\xvm\juhaas\colors.xc">
+      <replace find="&quot;en&quot;:" text="&quot;en&quot;:   &quot;0x8A80FF&quot;," />
+      <replace find="&quot;end&quot;:" text="&quot;end&quot;:  &quot;0x000584&quot;," />
+      <replace find="&quot;enbu&quot;:" text="&quot;enbu&quot;: &quot;0x00005A&quot;," />
+    </file>
+    <file name="configs\xvm\juhaas\hangar.xc">
+      <replace find="&quot;poor&quot;:" pattern="0xF7B000" text="0x00B0FF" />
+      <replace find="&quot;bad&quot;:" pattern="0xF78000" text="0x0080FF" />
+    </file>
+    <file name="configs\xvm\juhaas\hitlog.xc">
+      <replace find="color=" pattern="#FF3333" text="#00B0FF" />
+    </file>
+    <file name="configs\xvm\juhaas\carousel.xc">
+      <replace find="&quot;format&quot;:" pattern="#FF9000" text="#5182C0" />
+    </file>
+  </transform>
+</wot>

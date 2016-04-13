@@ -1,2 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<wpmi />
+<wpmi>
+  <msg id="1" expires="2016-04-14">Does it work!#Oh yes it does. Maybe even better that I have expected because now I can actually synchronize the repository on the fly. Not that I couldn't before.</msg>
+</wpmi>

@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<wot mid="GDMGLOG.JU.CB" visible="true" hid="1025" optional="true" title="Damage Panel Configuration Colorblind Extension" author="Juhaas" client-version="0.9.14.1" version="0.9.14.01" info="Color-blind compliant color scheme extension to the Damage Panel Configuration. Note that your game client graphics settings should also be set to [Colorblind] mode." info-url="" colorblind="true" requires="GDMGLOG.JU,GDMGLOG">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wot mid="GDMGLOG.JU.CB" visible="true" hid="1050" optional="true" title="Damage Panel Configuration Colorblind Extension" author="Juhaas" client-version="0.9.14.1" version="0.9.14.1" info="Color-blind compliant color scheme extension to the Damage Panel Configuration. Note that your game client graphics settings should also be set to [Colorblind] mode." info-url="" colorblind="true" requires="GDMGLOG.JU,GDMGLOG">
   <transform>
     <file name="configs\damagelog\log.cfg">
       <replace find="&quot;enemy&quot;:" pattern="#EE0000" text="#8A80FF" />

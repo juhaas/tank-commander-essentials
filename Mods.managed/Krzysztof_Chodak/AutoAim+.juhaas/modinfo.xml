@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<wot mid="AAIM.JU" visible="true" hid="1045" optional="false" title="Auto-Aim Indication+Snapping Configuration" author="Juhaas" client-version="0.9.14.1" version="0.9.14.01" info="Customized settings for Auto-Aim Indication+ mod." info-url="" requires="AAIM">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wot mid="AAIM.JU" visible="true" hid="1090" optional="false" title="Auto-Aim Indication+Snapping Configuration" author="Juhaas" client-version="0.9.14.1" version="0.9.14.1" info="Customized settings for Auto-Aim Indication+ mod." info-url="" requires="AAIM">
   <transform>
     <file name="x.x.x\scripts\client\mods\autoaim_indicator.json">
       <replace find="regex:(?:\s*\&quot;background\&quot;\s*:\s*\&quot;)(?'pat'.*)(?:\&quot;)" />

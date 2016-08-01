@@ -1,2 +1,2 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<wot mid="YKST" visible="false" hid="1050" optional="false" title="YasenKrasen Session Statistics" author="soloviyko" client-version="0.9.14.1" version="0.9.13 V2" info="Provides extended battle session statistics in garage as well as displaying the result or the previous battle while in a new battle." info-url="http://forum.worldoftanks.com/index.php?/topic/445745-" />
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wot mid="YKST" visible="false" hid="1100" optional="false" title="YasenKrasen Session Statistics" author="soloviyko" client-version="0.9.14.1" version="0.9.13 V2" info="Provides extended battle session statistics in garage as well as displaying the result or the previous battle while in a new battle." info-url="http://forum.worldoftanks.com/index.php?/topic/445745-" />

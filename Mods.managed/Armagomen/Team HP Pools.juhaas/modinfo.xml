@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<wot mid="ATHPP.JU" visible="true" hid="1035" optional="false" title="Team HP Pool Bar Configuration" author="Juhaas" client-version="0.9.14.1" version="0.9.14.01" info="Slightly customized settings for Armagomen's Team HP Pool Bar. Also replaces the counter background with something that better matches with WoT UI and doesn't look like total ass." info-url="" colorblind="true" requires="ATHPP">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wot mid="ATHPP.JU" visible="true" hid="1070" optional="false" title="Team HP Pool Bar Configuration" author="Juhaas" client-version="0.9.14.1" version="0.9.14.1" info="Slightly customized settings for Armagomen's Team HP Pool Bar. Also replaces the counter background with something that better matches with WoT UI and doesn't look like total ass." info-url="" colorblind="true" requires="ATHPP">
   <transform>
     <file name="x.x.x\scripts\client\gui\mods\mod_team_hp.json">
       <replace find="&quot;enable&quot;" line="13..18" pattern="true" text="false" />

@@ -1,40 +1,26 @@
-﻿/**
+/**
  * Extra sounds settings.
  */
 {
   "sounds": {
     // List of extra banks to load from folder res_mods/X.Y.Z/audioww.
-    // Use semicolon for multiple values: "bank1.bnk; bank2.bnk;..."
     "soundBanks": {
       "hangar": "xvm.bnk;",
-      "battle": "xvm.bnk;"
+      "battle": "critical_alerts.bnk"
     },
     // Enable sound events logging in the xvm.log
     "logSoundEvents": false,
     // Sound events remapping
     "soundMapping": {
       // Event mapping
-      //"originalEventName": "newEventName"
-      // To disable sound event use empty string for value
-      //"originalEventName": ""
-      //
-      // Disable original sixth sense light bulb sound event
-      "lightbulb": "",
-      // Disable original fire sound event
-      "vo_fire_started": "",
-      // Disable original ammo bay damaged event
-      "vo_ammo_bay_damaged": "",
-      //
-      // Sound events added by XVM
-      //
-      // Perk SixthSense
-      "xvm_sixthSense": "sixthsense",
-      // Perk SixthSense (On vehicle Т-34-85 Rudy)
-      "xvm_sixthSenseRudy": "sixthSenseRudy",
-      // Fire alert
-      "xvm_fireAlert": "fireAlert",
-      // Damage ammoBay
-      "xvm_ammoBay": "ammoBay"
+      "lightbulb":            "",
+      "minimap_attention":    "tce_minimap_attention",
+      "vo_fire_started":      "tce_fire",
+      "vo_ammo_bay_damaged":  "tce_ammo_bay",
+      "xvm_sixthSense":       "tce_sixthsense",
+      "xvm_sixthSenseRudy":   "tce_sixthsense_dog",
+      "xvm_fireAlert":        "",
+      "xvm_ammoBay":          ""
     }
   }
 }

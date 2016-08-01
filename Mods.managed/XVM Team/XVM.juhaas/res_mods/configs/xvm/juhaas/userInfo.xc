@@ -3,7 +3,7 @@
  */
 {
   "userInfo": {
-    "startPage":               4,
+    "startPage":               1,
     "sortColumn":             -5,
     "showExtraDataInProfile": false,
     "showXTEColumn":          true,

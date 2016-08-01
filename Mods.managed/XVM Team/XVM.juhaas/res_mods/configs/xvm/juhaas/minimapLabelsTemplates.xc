@@ -1,15 +1,9 @@
 ﻿/**
  * Minimap labels.
- * Надписи на миникарте.
  */
 {
   // Textfields for units on minimap.
-  // Текстовые поля юнитов на миникарте.
-  // TODO: documentation
   //  {
-  //    Если не указаны "ally", "squadman", "player", "enemy", "teamKiller", то они не используются.
-  //    Если не указаны "lost" и "spotted", то используются оба - и "lost", и "spotted".
-  //    Если не указаны "alive", "dead", то используются оба - и "alive", и "dead".
   //    "flags": [ "player", "ally", "squadman", "enemy", "teamKiller", "lost", "spotted", "alive", "dead" ],
   //    "format": "...",
   //    "shadow": { ... },
@@ -19,11 +13,10 @@
   //    "antiAliasType": "normal" // normal/advanced
   //  }
   // Definitions
-  // Шаблоны
   "def": {
-    // Формат поля по умолчанию
     "defaultItem": {
-      "flags": [ "player", "ally", "squadman", "enemy", "teamKiller", "lost", "spotted", "alive", "dead" ],
+      "enabled": true,
+      //"flags": [ "player", "ally", "squadman", "enemy", "teamKiller", "lost", "spotted", "alive", "dead" ],
       "shadow": { "distance": 0, "angle": 0, "color": "0x000000", "alpha": 80, "blur": 2, "strength": 4 },
       "alpha": 100,
       "x": 0,
@@ -36,7 +29,6 @@
       "bgColor": null,
       "borderColor": null
     },
-    // Тип техники, видимый
     "vtypeSpotted": {
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "enemy", "squadman", "teamKiller", "spotted", "alive" ],
@@ -44,22 +36,20 @@
       "align": "center",
       "valign": "center"
     },
-    // Название техники, видимый
-    "vehicleSpottedEnemy": {
+    "vehicleSpotted": {
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "enemy", "spotted", "alive" ],
-      "format": "<font size='6' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{vehicle}}</font>",
+      "format": "<font size='6' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{ally?|{{vehicle}}}}</font>",
       "x": 2,
       "y": -1
     },
     "vehicleSpottedAlly": {
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "ally", "teamKiller", "spotted", "alive" ],
-      "format": "<font size='6' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{vehicle}}</font>",
+      "format": "<font size='6' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{ally?{{vehicle}}|}}</font>",
       "x": 2,
       "y": -1
     },
-    // Ник игрока, видимый
     "nickSpotted": {
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "squadman", "spotted", "alive" ],
@@ -67,25 +57,24 @@
       "x": -10,
       "y": 1
     },
-    // Тип техники, пропавший
     "vtypeLost": {
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "enemy", "lost", "alive" ],
       "format": "<font size='12' color='{{.minimap.labelsData.colors.lostDot.{{sys-color-key}}}}'>{{.minimap.labelsData.vtype.{{vtype-key}}}}</font>",
       "align": "center",
       "valign": "center",
-      "alpha": 75
+      "alpha": 50
     },
-    // Название техники, пропавший
     "vehicleLost": {
       "$ref": { "path":"def.defaultItem" },
+      "enabled": false,
+      "alpha": 40,
       "flags": [ "enemy", "lost", "alive" ],
       "format": "<font size='6' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{vehicle}}</font>",
       "alpha": 85,
       "x": 2,
       "y": -1
     },
-    // Ник игрока, пропавший
     "nickLost": {
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "squadman", "lost", "alive" ],
@@ -94,7 +83,6 @@
       "x": 2,
       "y": -9
     },
-    // Тип техники, мертвый
     "vtypeDead": {
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "dead" ],
@@ -104,7 +92,6 @@
       "valign": "center",
       "alpha": 90
     },
-    // Название техники, мертвый
     "vehicleDead": {
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "squadman", "dead" ],
@@ -113,7 +100,6 @@
       "x": 2,
       "y": -1
     },
-    // Ник игрока, мертвый
     "nickDead": {
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "squadman", "dead" ],

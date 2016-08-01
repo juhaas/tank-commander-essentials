@@ -16,9 +16,6 @@
     "vehicleFieldOffsetXRight": 0,
     "vehicleIconOffsetXLeft":   0,
     "vehicleIconOffsetXRight":  0,
-    "clanIcon": {
-      "show": false
-    },
     "darkenNotReadyIcon": false,
     "formatLeftNick":     "{{name%.26s~..}}<font alpha='#A0' size='11'> {{clannb}}</font>",
     "formatRightNick":    "<font alpha='#A0' size='11'>{{clannb}}</font> {{name%.26s~..}}",

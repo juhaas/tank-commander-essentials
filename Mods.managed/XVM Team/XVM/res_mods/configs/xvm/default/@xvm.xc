@@ -58,15 +58,15 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "01.04.2016",
+    "date": "10.06.2016",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "0.9.14.1",
+    "gameVersion": "0.9.15.0.1",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "6.2.1.2"
+    "modMinVersion": "6.3.2"
   },
 
   // Parameters for login screen.
@@ -85,13 +85,13 @@
   // Общие параметры боевого интерфейса.
   "battle": ${"battle.xc":"battle"},
 
+  // Battle interface text fields
+  // Текстовые поля боевого интерфейса
+  "battleLabels": ${"battleLabels.xc":"labels"},
+
   // Frag counter panel.
   // Панель счёта в бою.
   "fragCorrelation": ${"battle.xc":"fragCorrelation"},
-
-  // Total HP of teams.
-  // Общее ХП команд.
-  "totalHP": ${"battle.xc":"totalHP"},
 
   // Ingame crits panel by "expert" skill.
   // Внутриигровая панель критов от навыка "эксперт".
@@ -137,8 +137,8 @@
   // Миникарта.
   "minimap": ${"minimap.xc":"minimap"},
 
-  // Minimap.
-  // Миникарта.
+  // Minimap (alternative mode).
+  // Миникарта (альтернативный режим).
   "minimapAlt": ${"minimapAlt.xc":"minimap"},
 
   // Over-target markers.
@@ -175,5 +175,9 @@
 
   // Extra sounds settings
   // Настройки дополнительных звуков
-  "sounds": ${"sounds.xc":"sounds"}
+  "sounds": ${"sounds.xc":"sounds"},
+
+  // XMQP services settings
+  // Настройки сервисов XMQP
+  "xmqp": ${"xmqp.xc":"xmqp"}
 }

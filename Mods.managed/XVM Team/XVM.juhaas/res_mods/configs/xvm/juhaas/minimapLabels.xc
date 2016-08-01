@@ -17,10 +17,9 @@
   //    "antiAliasType": "normal" // normal/advanced
   //  }
   "labels": {
-    "enabled": true,
     // Format set
     "formats": [
-      ${ "minimapLabelsTemplates.xc":"def.vehicleSpottedEnemy" },
+      ${ "minimapLabelsTemplates.xc":"def.vehicleSpotted" },
       ${ "minimapLabelsTemplates.xc":"def.nickSpotted" },
       ${ "minimapLabelsTemplates.xc":"def.vtypeLost" }
     ]

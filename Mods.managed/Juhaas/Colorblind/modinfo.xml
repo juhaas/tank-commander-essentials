@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wot mid="WOT.JU.CB" visible="true" hid="1130" optional="true" title="Colorblind Game Client UI Extensions" author="Juhaas" group="Gameplay Enhancements" client-version="0.9.15.1" version="0.9.15.7" info="Color-blind compliant color scheme extension to the game client UI, XVM Custom Configuration Profile, GambitER's damage log and other components installed by this mod pack. Note that your game client graphics settings should also be set to [Colorblind] mode." info-url="" colorblind="true">
+  <transform>
+    <file name="configs\xvm\juhaas\colors.xc">
+      <replace find="&quot;en&quot;:" text="&quot;en&quot;:   &quot;0x887EFF&quot;," />
+      <replace find="&quot;end&quot;:" text="&quot;end&quot;:  &quot;0x887EFF&quot;," />
+      <replace find="&quot;enbu&quot;:" text="&quot;enbu&quot;: &quot;0x00005A&quot;," />
+    </file>
+    <file name="configs\xvm\juhaas\hangar.xc">
+      <replace find="&quot;poor&quot;:" pattern="0xF7B000" text="0x887EFF" />
+      <replace find="&quot;bad&quot;:" pattern="0xF78000" text="0x887EFF" />
+    </file>
+    <file name="configs\xvm\juhaas\hitlog.xc">
+      <replace find="color=" pattern="#FF3333" text="#00B0FF" />
+    </file>
+    <file name="configs\xvm\juhaas\carousel.xc">
+      <replace find="&quot;format&quot;:" pattern="#FF9000" text="#887EFF" />
+    </file>
+    <file name="configs\damagelog\log.cfg">
+      <replace find="&quot;enemy&quot;:" pattern="#EE0000" text="#887EFF" />
+    </file>
+    <file name="configs\damagelog\blocked.cfg">
+      <replace find="&quot;text&quot;:" pattern="#FF3333" text="#AAA6D8" />
+      <replace find="&quot;text&quot;:" pattern="#EE0000" text="#887EFF" />
+      <replace find="&quot;alttext&quot;:" pattern="#FF3333" text="#AAA6D8" />
+      <replace find="&quot;alttext&quot;:" pattern="#EE0000" text="#887EFF" />
+      <replace find="&quot;pretext&quot;:" pattern="#FF3333" text="#AAA6D8" />
+      <replace find="&quot;altpretext&quot;:" pattern="#FF3333" text="#AAA6D8" />
+    </file>
+    <file name="configs\damagelog\message.cfg">
+      <replace find="&quot;enemy&quot;:" pattern="#EE0000" text="#887EFF" />
+    </file>
+  </transform>
+</wot>

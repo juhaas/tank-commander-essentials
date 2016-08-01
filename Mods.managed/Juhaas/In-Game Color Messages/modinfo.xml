@@ -1,2 +1,2 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<wot mid="COLORIM" visible="true" hid="1120" optional="false" title="Colored In-Game Messages" author="Juhaas" client-version="0.9.14.1" version="0.9.14.8" info="Colored and graphical in-game messages inspired by YasenKrasen Colored Messages." info-url="" colorblind="true" />
+<wot mid="COLORIM" visible="true" hid="1090" optional="false" title="Colored In-Game Messages" author="Juhaas" group="In-Game Information" client-version="0.9.15.1" version="0.9.15.6" info="Colored and graphical in-game messages inspired by YasenKrasen Colored Messages." info-url="" colorblind="true" />

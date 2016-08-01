@@ -8,11 +8,8 @@
     "sq":             "0xFFB964",
     "tk":             "0x00EAFF",
     "en":             "0xF50800",
-    "encb":           "0xF50800",
     "end":            "0x840500",
-    "endcb":          "0x840500",
     "enbu":           "0x5A0100",
-    "enbucb":         "0x5A0100",
     "pl":             "0xFFDD33",
     // Dynamic color by various statistical parameters.
     "colorRating": {
@@ -62,6 +59,12 @@
       "lost_arty":        "0xD9D9D9",
       "revealed_arty":    "0x94C000",
       "dead_arty":        "0xC00000"
+    },
+    // HP color depending on the ratio of ally and enemy teams hp.
+    "totalHP": {
+      "bad":     "0xFF0000",
+      "neutral": "0xFFFFFF",
+      "good":    "0x00FF00"
     },
     // Dynamic color by damage kind.
     "dmg_kind": {

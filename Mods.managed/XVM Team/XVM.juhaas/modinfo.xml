@@ -1,12 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<wot mid="XVM.JU" visible="true" hid="1010" optional="false" title="XVM Configuration Profile" author="Juhaas" client-version="0.9.14.1" version="0.9.14.6" info="Installs XVM with custom configuration, component layouts and simplified player statistics color scheme. If you install this mod be sure to turn advanced minimap features in the game client to [Never]." info-url="" requires="XVM">
+<wot mid="XVM.JU" visible="true" hid="1010" optional="false" title="XVM Configuration Profile" author="Juhaas" group="Gameplay Enhancements" client-version="0.9.15.1" version="0.9.15.7" info="Installs XVM with custom configuration, component layouts and simplified player statistics color scheme. If you install this mod be sure to turn advanced minimap features in the game client to [Never]." info-url="" requires="XVM">
   <transform>
     <file name="configs\xvm\juhaas\clock.xc">
-      <replace find="&quot;format&quot;:" pattern="{{H}}" text="{{h}}" />
-      <replace find="&quot;format&quot;:" pattern=" {{AM|PM}}" />
-    </file>
-    <file name="mods\shared_resources\xvm\l10n\en.xc">
-      <replace find="&quot;Timeleft&quot;:" pattern="Timeleft" text="Time left" />
+      <replace find="&quot;format&quot;:" pattern="{{h}}" text="{{H}}" />
+      <replace find="&quot;format&quot;:" pattern=":{{m%02d}}" text=":{{m%02d}}&lt;font size='12'&gt;{{AM?A|P}}M&lt;/font&gt;" />
+      <replace find="&quot;format&quot;:" pattern="{{D}} {{MMM}} {{Y}}" text="{{MMM}} {{D}}, {{Y}}" />
     </file>
   </transform>
 </wot>

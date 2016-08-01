@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wot mid="JU.XVMTHP" visible="true" hid="1040" optional="true" title="Juhaas' Team HP Panel" author="Juhaas" group="In-Game Information" client-version="0.9.15.1" version="0.9.15.1" info="A simple Team HP frag panel extension with active High Caliber requirement calculation." info-url="" requires="XVM" />

@@ -3,7 +3,7 @@
  */
 {
   "markers": {
-    "useStandardMarkers": false,
+    "enabled": true,
     "turretMarkers": {
       "highVulnerability": "<font face='xvm'>!</font>",
       "lowVulnerability":  "<font face='xvm'>&#34;</font>"

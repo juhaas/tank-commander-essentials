@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<wot mid="GDMGLOG.JU" visible="true" hid="1040" optional="false" title="Damage Panel Configuration" author="Juhaas" client-version="0.9.14.1" version="0.9.14.1" info="English translation and custom configuration settings for GambitER's Damage Panel." info-url="" requires="GDMGLOG">
+<wot mid="GDMGLOG.JU" visible="true" hid="1030" optional="false" title="Damage Panel Configuration" author="Juhaas" group="In-Game Information" client-version="0.9.15.1" version="0.9.15.6" info="English translation and custom configuration settings for GambitER's Damage Panel." info-url="" requires="GDMGLOG">
   <transform>
     <file name="configs\damagelog\timer.cfg">
       <replace find="&quot;enable&quot;" line="1..15" pattern="true" text="false" />
     </file>
-    <file name="configs\xvm\juhaas\hitlog.xc">
-      <replace find="&quot;x&quot;:" line="7" pattern="240" text="455" />
+    <file name="configs\xvm\juhaas\battleLabelsTemplates.xc">
+      <replace find="&quot;x&quot;" line="7..20" pattern="240" text="455" />
     </file>
   </transform>
 </wot>

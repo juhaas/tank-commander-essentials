@@ -1,2 +1,2 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<wot mid="YKST.JU" visible="true" hid="1110" optional="false" title="YasenKrasen Session Statistics Configuration" author="Juhaas" client-version="0.9.14.1" version="0.9.13.01" info="Customized settings of YasenKrasen battle session statistics." info-url="" requires="YKST" />
+<wot mid="YKST.JU" visible="true" hid="1080" optional="false" title="YasenKrasen Session Statistics Configuration" author="Juhaas" group="In-Game Information" client-version="0.9.15.1" version="0.9.15.6" info="Customized settings of YasenKrasen battle session statistics." info-url="" requires="YKST" />

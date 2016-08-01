@@ -2,168 +2,201 @@
  * Options for normal alive markers.
  */
 {
+  "shadow_none": {
+    "alpha": 0, "color": "0x000000", "angle": 45, "distance": 0, "size": 1, "blur": 1, "strength": 25
+  },
   "shadow_small": {
-    "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 2, "blur": 2, "strength": 200
+    "alpha": 100, "color": "0x000000", "angle": 45, "distance": 0, "size": 1, "blur": 1, "strength": 25
+  },
+  "shadow_lite": {
+    "alpha": 50, "color": "0x000000", "angle": 45, "distance": 0, "size": 1, "blur": 0, "strength": 50
+  },
+  "shadow_medium": {
+    "alpha": 80, "color": "0x000000", "angle": 45, "distance": 0, "size": 2, "blur": 1, "strength": 80
   },
   "defFonts": {
     "damage": {
-      "font": { "name": "$FieldFont", "size": 16, "align": "center" }
+      "textFormat": { "font": "$FieldFont", "size": 16, "align": "center" },
+      "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 3, "strength": 1 }
     },
     "small": {
-      "font": { "name": "$FieldFont", "size": 11, "align": "center" }
+      "textFormat": { "font": "$FieldFont", "size": 11, "align": "center" }
     },
     "stats": {
-      "font": { "name": "$FieldFont", "size": 11, "align": "center" }
+      "textFormat": { "font": "$FieldFont", "size": 11, "align": "center" },
+      "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 4, "strength": 2 }
+    },
+    "health": { 
+      "textFormat": { "font": "$FieldFont", "size": 11, "align": "center", "bold": true, "color": "0xF9F9F9" },
+      "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 4, "strength": 1 }
     },
     "statsicon": {
-      "font": { "name": "xvm",        "size": 22, "align": "center" }
+      "textFormat": { "font": "xvm",        "size": 22, "align": "center" }
     },
     "tankclassicon": {
-      "font": { "name": "xvm",        "size": 38, "align": "center" }
+      "textFormat": { "font": "xvm",        "size": 26, "align": "center" }
     },
     "name": {
-      "font": { "name": "$FieldFont", "size": 13, "align": "center" }
+      "textFormat": { "font": "$FieldFont", "size": 13, "align": "center" },
+      "shadow": { "enabled": true, "distance": 0, "angle": 45, "color": "0x000000", "alpha": 100, "blur": 6, "strength": 2 }
     },
     "turretmark": {
-      "font": { "name": "xvm",        "size": 14, "align": "center", "bold": true }
+      "textFormat": { "font": "xvm",        "size": 14, "align": "right", "bold": true }
     },
     "shield": {
-      "font": { "name": "xvm",        "size": 52, "align": "center" }
+      "textFormat": { "font": "xvm",        "size": 52, "align": "center" }
     }
   },
   "damageText": {
-    "visible": true, "x": 0, "y": -67, "color": null, "speed": 2, "maxRange": 40,
-		"font":   {"$ref": {"path": "defFonts.damage.font"}},
-    "shadow": ${"shadow_small"},
+    "enabled": true, "x": 0, "y": -67, "color": null, "speed": 2, "maxRange": 40,
+		"textFormat": {"$ref": {"path": "defFonts.damage.textFormat"}},
+    "shadow":     {"$ref": {"path": "defFonts.damage.shadow"}},
     "damageMessage": "{{dmg}}",
     "blowupMessage": "<font face='xvm' size='24'>N</font><br/>{{dmg}}"
   },
   "defItems": {
     "none": {
-      "visible": false
+      "enabled": false
     },
     "noSquad": {
-      "visible": "{{squad=sq?false|true}}"
+      "enabled": "{{squad=sq?false|true}}"
     },
     "vehicleIcon": {
-      "visible": true, "showSpeaker": false, "x": 0, "y": -16, "color": null, "maxScale": 100, "scaleX": 0, "scaleY": 16,
+      "enabled": true, "showSpeaker": false, "x": 0, "y": -18, "maxScale": 100, "offsetX": 0, "offsetY": 0,
 			"shadow": ${"shadow_small"}
     },
     "healthBar": {
-      "visible": true, "x": -41, "y": -33, "color": null, "lcolor": null, "width": 80, "height": 12,
+      "enabled": true, "x": -41, "y": -33, "color": null, "lcolor": null, "width": 80, "height": 12,
 			"border": {
-				"alpha": 50, "color": "0x000000", "size": 1
+				"alpha": 35, "color": "0x000000", "size": 1
 			},
 			"fill": {
-				"alpha": 50
+				"alpha": 45
 			},
 			"damage": {
 				"alpha": 100, "color": "{{c:dmg}}", "fade": 1
 			}
     },
     "contourIcon": {
-      "visible": false
-    },
-    "clanIcon": {
-      "visible": false
+      "enabled": false
     },
     "tierIcon": {
-      "visible": false
+      "enabled": false
     },
     "actionMarker": {
-      "visible": true, "x": 0, "y": -70
+      "enabled": true, "x": 0, "y": -70
     }
   },
   "defTexts": {
     "wn8rating": {
-      "name": "WN8 Rating", "visible": true, "x": 0, "y": -46, "color": "{{c:wn8}}",
-      "font":    {"$ref": {"path": "defFonts.small.font"}},
-      "shadow": ${"shadow_small"},
-      "format": "{{wn8%4d}}"
+      "name": "WN8 Rating", "enabled": true, "x": 0, "y": -46,
+      "textFormat": {"$ref": {"path": "defFonts.stats.textFormat"}},
+      "shadow":     {"$ref": {"path": "defFonts.stats.shadow"}},
+      "antiAliasType": "advanced",
+      "format": "<textformat><font color='{{c:wn8}}'>{{wn8%4d}}</font></textformat>"
     },
     "wn8rating_NoSquad": {
       "$ref": { "path": "defTexts.wn8rating" }, "alpha": "{{squad=sq?0|{{battletype!=random?0|100}}}}"
     },
     "winrate": {
-      "name": "Win Rate", "visible": true, "x": 0, "y": -46, "color": "{{c:winrate}}",
-      "font":    {"$ref": {"path": "defFonts.small.font"}},
-      "shadow": ${"shadow_small"},
-      "format": "{{winrate%3d~%}}"
+      "name": "Win Rate", "enabled": true, "x": 0, "y": -46,
+      "textFormat": {"$ref": {"path": "defFonts.stats.textFormat"}},
+      "shadow":     {"$ref": {"path": "defFonts.stats.shadow"}},
+      "antiAliasType": "advanced",
+      "format": "<textformat><font color='{{c:winrate}}'>{{winrate%3d~%}}</font></textformat>"
     },
     "winrate_NoSquad": {
       "$ref": { "path": "defTexts.winrate" }, "alpha": "{{squad=sq?0|{{battletype!=random?0|100}}}}"
     },
     "name": {
-      "name": "Name", "visible": true, "x": 0, "y": -36, "color": null,
-      "font":    {"$ref": {"path": "defFonts.name.font"}},
-      "shadow": ${"shadow_small"},
+      "name": "Name", "enabled": true, "x": 0, "y": -36,
+      "textFormat": {"$ref": {"path": "defFonts.name.textFormat"}},
+      "shadow":     {"$ref": {"path": "defFonts.name.shadow"}},
+      "antiAliasType": "advanced",
       "format": "{{squad?{{name}}|{{battletype=random?{{vehicle}}|{{name}}}}}}"
     },
     "name_Alt": {
-      "name": "Name", "visible": true, "x": 0, "y": -36, "color": null,
-      "font":    {"$ref": {"path": "defFonts.name.font"}},
-      "shadow": ${"shadow_small"},
+      "name": "Name", "enabled": true, "x": 0, "y": -36,
+      "textFormat": {"$ref": {"path": "defFonts.name.textFormat"}},
+      "shadow":     {"$ref": {"path": "defFonts.name.shadow"}},
+      "antiAliasType": "advanced",
       "format": "{{squad=sq?{{name}}|{{battletype=random?{{name}}|{{name}}}}}}"
     },
     "tankname": {
-      "name": "Tank name", "visible": true, "x": 0, "y": -36, "color": null,
-      "font":    {"$ref": {"path": "defFonts.name.font"}},
-      "shadow": ${"shadow_small"},
+      "name": "Tank name", "enabled": true, "x": 0, "y": -36,
+      "textFormat": {"$ref": {"path": "defFonts.name.textFormat"}},
+      "shadow":     {"$ref": {"path": "defFonts.name.shadow"}},
+      "antiAliasType": "advanced",
       "format": "{{vehicle}}"
     },
-    "health": {
-      "name": "Tank HP", "visible": true, "x": 0, "y": -20, "color": "0xFCFCFC",
-      "font":    {"$ref": {"path": "defFonts.small.font"}},
-      "shadow": ${"shadow_small"},
-      "format": "{{hp}} / {{hp-max}}"
+    "healthCurMax": {
+      "name": "Tank HP", "enabled": true, "x": 0, "y": -20,
+      "textFormat": {"$ref": {"path": "defFonts.health.textFormat"}},
+      "shadow":     {"$ref": {"path": "defFonts.health.shadow"}},
+      "antiAliasType": "normal",
+      "format": "{{hp}} | {{hp-max}}"
+    },
+    "healthCur": {
+      "name": "Tank HP", "enabled": true, "x": 0, "y": -20,
+      "textFormat": {"$ref": {"path": "defFonts.health.textFormat"}},
+      "shadow":     {"$ref": {"path": "defFonts.health.shadow"}},
+      "antiAliasType": "normal",
+      "format": "{{hp}}"
     },
     "tankclass": {
-      "name": "Tank Class", "visible": true, "x": 0, "y": -9, "color": null,
-      "font":    {"$ref": {"path": "defFonts.tankclassicon.font"}},
+      "name": "Tank Class", "enabled": true, "x": 0, "y": -4,
+      "textFormat": {"$ref": {"path": "defFonts.tankclassicon.textFormat"}},
       "shadow": ${"shadow_small"},
+      "antiAliasType": "normal",
       "format": "{{vtype}}"
     },
     "tankclass_NoSquad": {
       "$ref": { "path": "defTexts.tankclass" }, "alpha": "{{squad=sq?0|100}}"
     },
     "wingman": {
-      "name": "Wingman", "visible": true, "alpha": "{{squad=sq?70|0}}", "x": 0, "y": -14, "color": "0xE0BE7B",
-      "font":    {"$ref": {"path": "defFonts.shield.font"}},
+      "name": "Wingman", "enabled": true, "alpha": "{{squad=sq?70|0}}", "x": 0, "y": -14,
+      "textFormat": {"$ref": {"path": "defFonts.shield.textFormat"}},
       "shadow": ${"shadow_small"},
-      "format": "@"
+      "antiAliasType": "advanced",
+      "format": "<textformat><font color='#E0BE7B'>@</font></textformat>"
     },
     "tanktier": {
-      "visible": true, "x": -33, "y": -5, "color": "0xCCCCCC",
-      "font":    {"$ref": {"path": "defFonts.small.font"}, "align": "left"},
-      "shadow": ${"shadow_small"},
-      "format": "{{rlevel}}"
+      "enabled": true, "x": -43, "y": -4,
+      "textFormat": {"$ref": {"path": "defFonts.small.textFormat"}, "align": "left"},
+      "shadow": { "enabled": false },
+      //"format": "<textformat><font color='#CCCCCC'>{{rlevel}}</font></textformat>"
+      "format": "<textformat><img src='img://gui/maps/icons/levels/tank_level_{{level}}.png'></textformat>"
     },
     "tanktier_NoSquad": {
       "$ref": { "path": "defTexts.tanktier" }, "alpha": "{{squad=sq?0|{{battletype!=random?0|100}}}}"
     },
     "turret": {
-      "name": "Turret Mark", "visible": true, "x": 39, "y": -5, "w": 33, "h": 16, "alpha": 70, "color": null,
-      "font":    {"$ref": {"path": "defFonts.turretmark.font"}, "align": "right"},
+      "name": "Turret Mark", "enabled": true, "x": 39, "y": -4, "w": 33, "h": 16, "alpha": 70,
+      "textFormat": {"$ref": {"path": "defFonts.turretmark.textFormat"}},
       "shadow": ${"shadow_small"},
+      "antiAliasType": "advanced",
       "format": "{{turret}}"
     },
     "statsicon":
     {
-      "name": "Stats Symbol", "visible": true, "x": 0, "y": -44, "color": "{{c:wn8}}",
-      "font":    {"$ref": {"path": "defFonts.statsicon.font"}},
-      "shadow": ${"shadow_small"},
-      "format": "R"
+      "name": "Stats Symbol", "enabled": true, "x": 0, "y": -44,
+      "textFormat": {"$ref": {"path": "defFonts.statsicon.textFormat"}},
+      "shadow":     {"$ref": {"path": "defFonts.stats.shadow"}},
+      "antiAliasType": "advanced",
+      "format": "<textformat><font color='{{c:wn8}}'>R</font></textformat>"
     },
     "statstotal": {
-      "name": "Win Rate", "visible": true, "x": -12, "y": -44,
-      "font":    {"$ref": {"path": "defFonts.stats.font"}, "align": "right"},
-      "shadow": ${"shadow_small"},
+      "name": "Win Rate", "enabled": true, "x": -12, "y": -44,
+      "textFormat": {"$ref": {"path": "defFonts.stats.textFormat"}, "align": "right"},
+      "shadow":     {"$ref": {"path": "defFonts.stats.shadow"}},
+      "antiAliasType": "advanced",
       "format": "<textformat leading='-4'><font color='{{c:winrate}}'>{{winrate%3d|---}}</font>\n<font color='{{c:kb}}'>{{battles%6d|----}}</font></textformat>"
     },
     "statstank": {
-      "name": "Win Rate", "visible": true, "x": 12, "y": -44,
-      "font":    {"$ref": {"path": "defFonts.stats.font"}, "align": "left"},
-      "shadow": ${"shadow_small"},
+      "name": "Win Rate", "enabled": true, "x": 12, "y": -44,
+      "textFormat": {"$ref": {"path": "defFonts.stats.textFormat"}, "align": "left"},
+      "shadow":     {"$ref": {"path": "defFonts.stats.shadow"}},
+      "antiAliasType": "advanced",
       "format": "<textformat leading='-4'><font color='{{c:t-winrate}}'>{{t-winrate%-3d|---}}</font>\n<font color='{{c:t-battles}}'>{{t-battles%-6d|----}}</font></textformat>"
     }
   },
@@ -175,43 +208,41 @@
         "damageTextPlayer":   ${"damageText"},
         "damageTextSquadman": ${"damageText"},
         "contourIcon":        ${"defItems.contourIcon"},
-        "clanIcon":           ${"defItems.clanIcon"},
         "levelIcon":          ${"defItems.tierIcon"},
         "actionMarker":       ${"defItems.actionMarker"}
       },
       "dead": {
-        "vehicleIcon":         {"visible": false},
-        "healthBar":           {"visible": false},
+        "vehicleIcon":         {"enabled": false},
+        "healthBar":           {"enabled": false},
         "damageText":         ${"damageText"},
         "damageTextPlayer":   ${"damageText"},
         "damageTextSquadman": ${"damageText"},
-        "contourIcon":         {"visible": false},
-        "clanIcon":            {"visible": false},
-        "levelIcon":           {"visible": false},
-        "actionMarker":        {"visible": false},
+        "contourIcon":         {"enabled": false},
+        "levelIcon":           {"enabled": false},
+        "actionMarker":        {"enabled": false},
         "textFields": []
       }
     },
     "variant1": [
         ${"defTexts.name"},
         ${"defTexts.wn8rating_NoSquad"},
-        ${"defTexts.health"},
+        ${"defTexts.healthCur"},
+        //${"defTexts.tankclass_NoSquad"},
         ${"defTexts.tanktier_NoSquad"},
-        ${"defTexts.tankclass_NoSquad"},
         ${"defTexts.wingman"}
     ],
     "variant2": [
         ${"defTexts.tankname"},
         ${"defTexts.wn8rating"},
-        ${"defTexts.health"},
+        ${"defTexts.healthCur"},
         ${"defTexts.tanktier"},
         ${"defTexts.turret"}
     ],
     "variant3": [
         ${"defTexts.name_Alt"},
         ${"defTexts.winrate"},
-        ${"defTexts.tankclass"},
-        ${"defTexts.health"},
+        ${"defTexts.healthCur"},
+        //${"defTexts.tankclass"},
         ${"defTexts.tanktier"},
         ${"defTexts.turret"}
     ],
@@ -219,7 +250,7 @@
         ${"defTexts.statsicon"},
         ${"defTexts.statstotal"},
         ${"defTexts.statstank"},
-        ${"defTexts.health"},
+        ${"defTexts.healthCur"},
         ${"defTexts.tanktier"},
         ${"defTexts.turret"}
     ],
@@ -230,12 +261,12 @@
   "allyAliveNormal": {
     "textFields":   ${"defLayout.variant1"},
     "$ref":          {"path": "defLayout.common.alive"}, 
-    "vehicleIcon":  ${"defItems.none"}
+    "vehicleIcon":  ${"defItems.vehicleIcon"}
   },
   "allyAliveAlternate": {
     "textFields":   ${"defLayout.variant3"},
     "$ref":          {"path": "defLayout.common.alive"}, 
-    "vehicleIcon":  ${"defItems.none"}
+    "vehicleIcon":  ${"defItems.vehicleIcon"}
   },
   "allyDeadNormal": {
     "textFields":   ${"defLayout.variant5"},

@@ -1,2 +1,2 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<wot mid="CNTRICONS.JU" visible="true" hid="1150" optional="false" title="Vehicle Contour Icons (Modified)" author="Juhaas" client-version="0.9.14.1" version="1.46" info="Some of Jimbo's tank icons removed to provide more distinct coloring." info-url="" requires="CNTRICONS" />
+<wot mid="CNTRICONS.JU" visible="true" hid="1120" optional="false" title="Vehicle Contour Icons (Modified)" author="Juhaas" group="In-Game Information" client-version="0.9.15.1" version="1.46" info="Some of Jimbo's tank icons removed to provide more distinct coloring." info-url="" requires="CNTRICONS" />

@@ -5,10 +5,10 @@
   "hotkeys": {
     // onHold: false=Toggle | true=On while depressed.
     "minimapZoom": { 
-      "enabled": true, "keyCode": 29, "onHold": true
+      "enabled": true, "keyCode": 29, "onHold": false
     },
     "minimapAltMode": {
-      "enabled": true, "keyCode": 56, "onHold": true 
+      "enabled": true, "keyCode": 56, "onHold": false 
     },
     "playersPanelAltMode": {
       "enabled": false, "keyCode": 29, "onHold": true 

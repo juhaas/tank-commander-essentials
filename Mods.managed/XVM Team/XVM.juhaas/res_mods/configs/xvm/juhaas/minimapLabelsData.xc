@@ -15,7 +15,7 @@
         "teamKiller_alive":    "#A6F8FF",
         "teamKiller_dead":     "#5B898C",
         "teamKiller_blowedup": "#5B898C",
-        "enemy_alive":         "#F50800",
+        "enemy_alive":         "#EE0000",
         "enemy_dead":          "#996763",
         "enemy_blowedup":      "#996763"
       },
@@ -29,7 +29,7 @@
         "teamKiller_alive":    "#00EAFF",
         "teamKiller_dead":     "#043A40",
         "teamKiller_blowedup": "#043A40",
-        "enemy_alive":         "#F50800",
+        "enemy_alive":         "#EE0000",
         "enemy_dead":          "#4D0300",
         "enemy_blowedup":      "#4D0300"
       },
@@ -43,7 +43,7 @@
         "teamKiller_alive":    "#00D2E5",
         "teamKiller_dead":     "#043A40",
         "teamKiller_blowedup": "#043A40",
-        "enemy_alive":         "#FF615C",
+        "enemy_alive":         "#EE0000",
         "enemy_dead":          "#4D0300",
         "enemy_blowedup":      "#4D0300"
       }

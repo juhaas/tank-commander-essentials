@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Parameters for hangar
  */
 {
@@ -37,8 +37,8 @@
         "color": {
           "great": "0x36C500",
           "good":  "0x368300",
-          "poor":  "0xF7B000",
-          "bad":   "0xF78000" 
+          "poor":  "0x00B0FF",
+          "bad":   "0x0080FF" 
         }
       },
       "threshold": {

@@ -4,14 +4,14 @@
   <title>Juhaas's Essentials Mod Pack (GitHub)</title>
   <min-app-version>1.2.1</min-app-version>
   <author>Juhaas</author>
-  <client-version>0.9.14.1</client-version>
-  <version>0.9.14.8</version>
+  <client-version>0.9.15.1</client-version>
+  <version>0.9.15.1</version>
   <info>Nothing too fancy with relatively uncluttered interface. Custom hit and damage log composition, simplified player panels and XVM colors for those that don't give a rat's ass about all 50 shades of the WN8/WR rainbow.</info>
   <info-url>http://forum.wotlabs.net/index.php?/topic/19625-0912-</info-url>
   <pack-file>pack-update.wmpi</pack-file>
   <update-url type-code="github" direct="true">
     <link-data branch="master">https://github.com/juhaas/tank-commander-essentials</link-data>
   </update-url>
-  <date>2016-04-01</date>
+  <date>2016-04-02</date>
   <sync-folders>text\lc_messages</sync-folders>
 </wmpi>
